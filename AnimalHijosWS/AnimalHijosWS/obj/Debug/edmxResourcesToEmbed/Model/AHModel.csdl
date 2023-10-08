@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AnimalesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="animalesCautiverio">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Especie" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Edad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RasgosUnicos" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LugarOrigen" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TipoHabitat" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Sexo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="AnimalesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="animalesCautiverios" EntityType="Self.animalesCautiverio" />
+  </EntityContainer>
+</Schema>

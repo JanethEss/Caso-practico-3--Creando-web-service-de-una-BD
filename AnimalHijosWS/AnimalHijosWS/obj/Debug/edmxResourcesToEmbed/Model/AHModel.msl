@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AnimalesModelStoreContainer" CdmEntityContainer="AnimalesEntities">
+    <EntitySetMapping Name="animalesCautiverios">
+      <EntityTypeMapping TypeName="AnimalesModel.animalesCautiverio">
+        <MappingFragment StoreEntitySet="animalesCautiverio">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Especie" ColumnName="Especie" />
+          <ScalarProperty Name="Edad" ColumnName="Edad" />
+          <ScalarProperty Name="RasgosUnicos" ColumnName="RasgosUnicos" />
+          <ScalarProperty Name="LugarOrigen" ColumnName="LugarOrigen" />
+          <ScalarProperty Name="TipoHabitat" ColumnName="TipoHabitat" />
+          <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
